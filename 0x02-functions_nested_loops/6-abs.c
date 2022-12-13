@@ -10,13 +10,5 @@
 
 int _abs(int a)
 {
-	if (n < 0)
-	{
-		return (n * -1);
-	}
-	else
-	{
-		return (n);
-	}
-
+	return (abs(a));
 }
