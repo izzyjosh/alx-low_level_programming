@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * print_alphabet_x10 - function
+ * @void: param
  */
 
 void print_alphabet_x10(void)
@@ -14,10 +13,8 @@ void print_alphabet_x10(void)
 	{
 		for (j = 'a'; j <= 'z'; j++)
 		{
-			_putchar(i);
+			_putchar(j);
 		}
 		_putchar('\n');
-
-		
 	}
 }
