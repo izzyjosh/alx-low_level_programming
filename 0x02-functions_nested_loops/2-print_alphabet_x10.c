@@ -8,16 +8,16 @@
 
 void print_alphabet_x10(void)
 {
-	int i = 0;
-	while (i < 10)
+	int i, j;
+	
+	for (i = 0; i < 10; i++)
 	{
-		int j;
 		for (j = 'a'; j <= 'z'; j++)
 		{
 			_putchar(i);
 		}
 		_putchar('\n');
 
-		i++;
+		
 	}
 }
