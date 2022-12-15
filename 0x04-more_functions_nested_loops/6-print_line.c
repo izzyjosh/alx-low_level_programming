@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- * print_line - function
- * @n: parameter
- * Return: void
+ * print_line - print lines on the terminak based on n
+ * @n: represents number of lines to be printed
  */
 
 void print_line(int n)
 {
 	int i;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (i = 1; i <= n; i++)
+		for (i = 0; i < n; i++)
 		{
 			_putchar('_');
 		}
+		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
