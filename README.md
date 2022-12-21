@@ -1,1 +1,3 @@
-this repo contains c programming code
+#project discription
+
+this project contains codes on pointers, arrays and strings 
