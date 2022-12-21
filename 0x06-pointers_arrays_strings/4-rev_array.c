@@ -1,26 +1,35 @@
 #include "main.h"
 
 /**
- * reverse_array - function to reverse an array
- * @a: a pointer to an array
- * @n: len of the array
+ * reverse_array - reverses an array in place
+ * @a: array to reverse
+ * @n: length of array
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, m;
+	int x, y, z;
 
-	n = n - 1;
-	m = n;
-	int arr[n + 1];
-
-	for (i = 0; i < n; i++)
+	for (x = 0; x < n - 1; x++)
 	{
-		arr[i] = a[m];
-		m--;
+		for (y = x + 1; y > 0; y--)
+		{
+			z = a[y];
+			a[y] = a[y - 1];
+			a[y - 1] = z;
+		}
 	}
-	for (i = 0; i < n + 1; i++)
-	{
-		a[i] = arr[i];
-	}
+	/**
+	* The below block of code works but betty refused
+	* to check it. Not really sure why though but
+	* for other cases, this should also be ok for you.
+	* i = n;
+	* mid = (n - 1) / 2;
+	* for (i = mid; i >= 0; i--)
+	* {
+	* temp = a[i];
+	* a[i] = a[n - 1 - i];
+	* a[n - 1 - i] = temp;
+	* }
+	*/
 }
