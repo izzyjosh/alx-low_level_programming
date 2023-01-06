@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main(int argc, char * argv[])
+/**
+ * main - function
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: value of count
+ */
+
+int main(int argc, char *argv[])
 {
 	int sum, i;
 
