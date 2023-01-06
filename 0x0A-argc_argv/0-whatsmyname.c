@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - function
- * @argc: count the number of argument at executing time
- * @argv: an array containing each argument
- * Return: int
+ * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0
  */
 
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
+	(void)argc;
 
 	printf("%s\n", argv[0]);
 
-	return (0);
+	exit(EXIT_SUCCESS);
 }
