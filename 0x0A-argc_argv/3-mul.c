@@ -1,29 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
- * main - function
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 (successful)
+ * main - Entry point
+ * @argc: arg count
+ * @argv: arg vector
+ * Return: success
  */
 
 int main(int argc, char *argv[])
 {
-	int i, mul, j, k;
+	int result = 1, i;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
-		j = atoi(argv[1]);
-		k = atoi(argv[2]);
-		mul = j * k;
-		printf("%d\n", mul);
+		for (i = 1; i < argc; i++)
+			result = result * strtol(argv[i], NULL, 10);
+		printf("%d\n", result);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+
 	return (0);
 }
